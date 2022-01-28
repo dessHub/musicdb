@@ -1,0 +1,17 @@
+.nav-container {
+  background-color: #e3e7ed;
+}
+
+.navbar-brand {
+  color: #000;
+}
+
+.input-group-text {
+  background-color: unset;
+  border: unset;
+}
+
+.form-control {
+  background-color: #e3e7ed;
+  border: unset;
+}
