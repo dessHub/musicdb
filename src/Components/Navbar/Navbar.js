@@ -1,12 +1,13 @@
 import './Navbar.css';
-import { Navbar, Nav, NavbarBrand, NavItem, InputGroupText, InputGroup, Input } from 'reactstrap';
+import { Navbar, Nav, NavItem, InputGroupText, InputGroup, Input } from 'reactstrap';
 import { AiOutlineSearch, AiOutlineMore } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const Header = () => (
   <Navbar className="nav-container" expand="md">
-    <NavbarBrand href="/" className="mr-3 navbar-brand">
+    <Link to="/" className="mr-3 navbar-brand">
       MusicDB
-    </NavbarBrand>
+    </Link>
     <AiOutlineMore />
     <Nav className="me-auto" navbar>
       <NavItem>
