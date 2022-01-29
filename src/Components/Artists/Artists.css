@@ -1,0 +1,146 @@
+.content-container {
+  height: 100vh;
+}
+
+.artist-container {
+  display: flex;
+  height: 50%;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .artist-container {
+    display: none;
+  }
+}
+
+.container-left {
+  display: block;
+  width: 60%;
+  padding: 5% 5% 1% 10%;
+  background-color: rgb(213, 223, 223);
+}
+
+.container-right {
+  width: 40%;
+  padding: 3%;
+}
+
+.artist-container-mobile {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .artist-container-mobile {
+    display: none;
+  }
+}
+
+.artist-thumbnail {
+  width: 100%;
+  height: 200px;
+  background-color: teal;
+  margin-bottom: 1rem;
+}
+
+.container-top {
+  border-bottom: 1px solid #000;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+}
+
+.name {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.fans > span {
+  font-size: 16px;
+}
+
+.fans > span:first-child {
+  font-weight: 700;
+}
+
+.divider {
+  width: 3.5rem;
+  height: 2px;
+  background-color: #94a3b8;
+  margin: 3px 0px 10px;
+}
+
+.description {
+  font-size: 16px;
+}
+
+.subheading {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.tracks-row {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.tracks-row > span:first-child {
+  width: 5%;
+  font-weight: 700;
+}
+
+.tracks-row > span:nth-child(2) {
+  width: 85%;
+}
+
+.album-container {
+  width: 100%;
+  padding: 5% 10% 1% 10%;
+}
+
+.album-row {
+  display: flex;
+}
+
+.album-card {
+  width: 200px;
+}
+
+.album-thumbnail {
+  width: 100%;
+  height: 200px;
+  background-color: teal;
+  margin-bottom: 10px;
+}
+
+.album-name {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.album-year {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .album-container {
+    padding: 5%;
+  }
+
+  .album-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .album-card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
