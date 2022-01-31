@@ -2,9 +2,15 @@
   height: 100vh;
 }
 
+.spinner-container {
+  text-align: center;
+  width: 100%;
+  padding-top: 5rem;
+}
+
 .artist-container {
   display: flex;
-  height: 50%;
+  height: 40%;
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
@@ -46,6 +52,17 @@
   height: 200px;
   background-color: teal;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .artist-thumbnail {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.artist-thumbnail > img {
+  width: 100%;
 }
 
 .container-top {
@@ -107,6 +124,7 @@
 
 .album-row {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .album-card {
@@ -118,6 +136,10 @@
   height: 200px;
   background-color: teal;
   margin-bottom: 10px;
+}
+
+.album-thumbnail > img {
+  width: 100%;
 }
 
 .album-name {
@@ -142,5 +164,11 @@
   .album-card {
     width: 100%;
     margin-bottom: 1rem;
+  }
+
+  .album-thumbnail {
+    height: auto;
+    background-color: teal;
+    margin-bottom: 10px;
   }
 }
