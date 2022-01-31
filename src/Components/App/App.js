@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './../../logo.svg';
+import React, { Fragment, useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
+import Navbar from '../Navbar/Navbar';
+import Home from '../Home/Home';
+import Artists from '../Artists/Artists';
 
-import { Button, Paper } from '@material-ui/core';
 function App() {
+  const [searchValue, setSearchValue] = useState('baby');
   return (
-    <Container maxWidth="sm" className="App">
-      <Paper>
-        <img src={logo} className="App-logo" alt="logo" />
-        <Typography variant="h4" component="h1" gutterBottom>
-          Create React App + Material-UI
-        </Typography>
-        <Button variant="contained" color="primary">
-          Primary Button
-        </Button>
-        <Button variant="contained" color="secondary">
-          Secondary Button
-        </Button>
-      </Paper>
-    </Container>
+    <Fragment>
+      <BrowserRouter>
+        <Navbar setSearchValue={setSearchValue} />
+
+        <Routes>
+          <Route path="/" element={<Home searchValue={searchValue} />} />
+          <Route path="/artists/:id" element={<Artists />} />
+        </Routes>
+      </BrowserRouter>
+    </Fragment>
   );
 }
 export default App;
